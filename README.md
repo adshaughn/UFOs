@@ -10,6 +10,6 @@ Additionally, there is an option to filter by shape of the UFO, which would also
 
 # Summary
 
-One drawback
+One drawback to this page is that the underlying dataset does not dynamically update. A future implementation would be to incorporate a web scraping system to allow for the site to update on a daily or weekly basis from known good sources of this information.
 
-Two additional recommendations
+Additionally, it would be great to add additional tags to the data, like additional descriptors (lights? movement?).
