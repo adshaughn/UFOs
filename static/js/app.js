@@ -56,11 +56,11 @@ function updateFilters() {
 
 
 
-    if (date) {
+    //if (date) {
       // Apply `filter` to the table data to only keep the
       // rows where the `datetime` value matches the filter value
-      filteredData = filteredData.filter(row => row.datetime === date);
-    }
+     // filteredData = filteredData.filter(row => row.datetime === date);
+   // }
   
      // Rebuild the table using the filtered data
     // @NOTE: If no date was entered, then filteredData will
@@ -68,7 +68,7 @@ function updateFilters() {
     buildTable(filteredData);
   
     // 6. Call function to apply all filters and rebuild the table
-    filterTable(filteredData);
+    //filterTable(filteredData);
 
   
   // 7. Use this function to filter the table when data is entered.
