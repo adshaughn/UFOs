@@ -58,12 +58,40 @@ function updateFilters() {
   function filterTable() {
   
     // 8. Set the filtered data to the tableData.
+    let date = d3.select("#datetime").property("value");
+    let city = d3.select("city").property("value");
+    let state = d3.select("state").property("value");
+    let country = d3.select("country").property("value");
+    let shape = d3.select("shape").property("value");
+
     let filteredData = tableData;
   
     // 9. Loop through all of the filters and keep any data that
     // matches the filter values
+      // clear the table
       tbody.html("");
     
+      if (date) {
+        filteredData = filteredData.filter(row => row.datetime === date);
+      }
+
+      if (city) {
+        filteredData = filteredData.filter(row => row.city === city);
+      }
+
+      if (state) {
+        filteredData = filteredData.filter(row => row.state === state);
+      }
+
+      if (country) {
+        filteredData = filteredData.filter(row => row.country === country);
+      }
+
+      if (shape) {
+        filteredData = filteredData.filter(row => row.shape === shape);
+      }
+
+
       filteredData.forEach((dataRow) => {
 
         let row = tbody.append("tr");
