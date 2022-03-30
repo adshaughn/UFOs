@@ -8,7 +8,7 @@ Specifically, users can input city, state, and country filters, plus a date rang
 
 For example, let's say one wants to see if there have been any sightings of UFOs in Phoenix, AZ. One would first load the site:
 
-![Full Table](readme_images/inital.png)
+![Full Table](readme_images/initial.png)
 
 Then, inside the filter box on the left we can narrow down the results. 
 
@@ -20,7 +20,7 @@ Let's add "phoenix" as a city and see our results.
 
 Additionally, there is an option to filter by shape of the UFO, which would also allow for a user to see if there were multiple sightings of what was possibly the same object in a given period of time. For example, let's see if any spheres have been sighted.
 
-![Spheres](readme_images/spheres.png)
+![Spheres](readme_images/sphere.png)
 
 # Summary
 
